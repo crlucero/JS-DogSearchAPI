@@ -9,14 +9,19 @@
   <body>
     <div class="container">
       <h1>Get Dog images!</h1>
-      <label for="name">Enter a breed name:</label>
-      
-        <input id="name" type="text">
-        <form id="breedname">
-        <button class="btn-success" id="breedname" type ="submit">Get Image!</button>
-          </form>
+      <label for="name">Select a breed </label>
+      <form id="breedname">
+        <select id="breedlist" form="breedname"></select>
+        <button class="btn-success"type ="submit">Get Image!</button>
+      </form>
       <div>
         <img id="result" src="" alt="">
+      </div><hr>
+      <form id="random">
+        <button class="btn-success" id="submit" type ="submit">Get Random Dog Image!</button>
+      </form>
+      <div>
+        <img id="output" src="" alt="">
       </div>
     </div>
   </body>
